@@ -1,0 +1,10 @@
+{
+  "name": "lao da",
+  "age": 27,
+  "hobby": [
+    "reading",
+    "swimming",
+    "running"
+  ],
+  "is_married": false
+}
