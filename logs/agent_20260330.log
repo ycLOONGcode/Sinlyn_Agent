@@ -1,0 +1,67 @@
+2026-03-30 16:06:16,507 - agent - INFO - main.py:37 - [FastAPI] 智扫通智能客服API v1.0.0 启动成功
+2026-03-30 16:06:16,507 - agent - INFO - main.py:38 - [FastAPI] 服务地址: http://0.0.0.0:8000
+2026-03-30 16:08:00,160 - agent - INFO - logging.py:35 - [API] GET /api/v1/health
+2026-03-30 16:08:00,162 - agent - DEBUG - health.py:23 - [健康检查] 执行健康检查
+2026-03-30 16:08:00,165 - agent - INFO - logging.py:43 - [API] 响应: GET /api/v1/health 状态码: 200 耗时: 0.004秒
+2026-03-30 16:08:00,231 - agent - INFO - logging.py:35 - [API] GET /favicon.ico
+2026-03-30 16:08:00,231 - agent - INFO - logging.py:43 - [API] 响应: GET /favicon.ico 状态码: 404 耗时: 0.000秒
+2026-03-30 16:08:24,993 - agent - INFO - logging.py:35 - [API] GET /api/v1/health/docs
+2026-03-30 16:08:25,029 - agent - INFO - logging.py:43 - [API] 响应: GET /api/v1/health/docs 状态码: 404 耗时: 0.001秒
+2026-03-30 16:08:48,995 - agent - INFO - logging.py:35 - [API] GET /docs
+2026-03-30 16:08:48,996 - agent - INFO - logging.py:43 - [API] 响应: GET /docs 状态码: 200 耗时: 0.000秒
+2026-03-30 16:09:18,831 - agent - INFO - logging.py:35 - [API] GET /openapi.json
+2026-03-30 16:09:18,881 - agent - INFO - logging.py:43 - [API] 响应: GET /openapi.json 状态码: 200 耗时: 0.050秒
+2026-03-30 16:12:23,839 - agent - INFO - logging.py:35 - [API] GET /docs
+2026-03-30 16:12:23,840 - agent - INFO - logging.py:43 - [API] 响应: GET /docs 状态码: 200 耗时: 0.001秒
+2026-03-30 16:12:23,977 - agent - INFO - logging.py:35 - [API] GET /openapi.json
+2026-03-30 16:12:23,978 - agent - INFO - logging.py:43 - [API] 响应: GET /openapi.json 状态码: 200 耗时: 0.000秒
+2026-03-30 16:13:02,311 - agent - INFO - logging.py:35 - [API] POST /api/v1/chat/message
+2026-03-30 16:13:02,316 - agent - DEBUG - dependencies.py:20 - [依赖注入] 创建ReactAgent实例
+2026-03-30 16:13:02,332 - agent - INFO - chat.py:170 - [对话接口] 收到消息: 小户型适合哪些扫地机器人...
+2026-03-30 16:13:02,333 - agent - ERROR - chat.py:85 - [会话管理] 加载会话失败: string, 错误: [Errno 2] No such file or directory: 'E:\\Pycharm项目\\rag_qa_system\\sessions\\string.json'
+2026-03-30 16:13:02,333 - agent - INFO - chat_service.py:37 - [对话服务] 开始处理查询
+2026-03-30 16:13:02,338 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-30 16:13:02,338 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 【内部指令-切勿向用户展示或复述本条及下方任何带【】标记的行】
+你是扫地机器人官方旗舰店的专业在线客服。回答需简洁、专业、易懂，避免冗长堆砌。
+用户会以「小智」这一昵称称呼你；你须在恰当的首次或开场场景以此名称自称，并自然告知对方可以这样称呼你，例如：「你好呀~我是小智，很高兴为你服务！」
+（以上仅为风格示例，可据实微调，勿重复堆砌多套问候。）
+【应答风格】专业、简洁、亲切
+【本轮用户问题】
+小户型适合哪些扫地机器人
+2026-03-30 16:13:06,950 - agent - INFO - middleware.py:19 - [tool monitor]执行工具：rag_summarize
+2026-03-30 16:13:06,951 - agent - INFO - middleware.py:20 - [tool monitor]传入参数：{'query': '小户型 扫地机器人 选购推荐'}
+2026-03-30 16:13:13,848 - agent - INFO - middleware.py:24 - [tool monitor]工具rag_summarize调用成功
+2026-03-30 16:13:13,852 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有3条消息。
+2026-03-30 16:13:13,854 - agent - DEBUG - middleware.py:42 - [log_before_model]ToolMessage | 小户型选购扫地机器人时，应优先考虑体积小巧、转弯灵活、边角清洁能力强的型号；建议选择具备激光导航或视觉导航系统以提升建图与避障精度；电池续航需满足单次清扫全屋需求，一般30-60分钟足够；吸力在2000Pa以上可有效清理灰尘和宠物毛发；支持APP控制和智能分区功能便于操作管理；部分机型配备自动集尘或拖扫一体功能，可根据实际需求选择。
+2026-03-30 16:13:25,914 - agent - INFO - chat_service.py:49 - [对话服务] 查询处理完成
+2026-03-30 16:13:25,919 - agent - INFO - chat.py:71 - [会话管理] 会话已保存: string
+2026-03-30 16:13:25,920 - agent - INFO - chat.py:204 - [对话接口] 响应完成, 会话ID: string
+2026-03-30 16:13:25,924 - agent - INFO - logging.py:43 - [API] 响应: POST /api/v1/chat/message 状态码: 200 耗时: 23.613秒
+2026-03-30 16:15:29,973 - agent - INFO - logging.py:35 - [API] POST /api/v1/chat/message
+2026-03-30 16:15:29,976 - agent - INFO - chat.py:170 - [对话接口] 收到消息: 这些机器人有什么特点...
+2026-03-30 16:15:29,977 - agent - INFO - chat_service.py:37 - [对话服务] 开始处理查询
+2026-03-30 16:15:29,979 - agent - INFO - middleware.py:40 - [log_before_model]即将调用模型，带有1条消息。
+2026-03-30 16:15:29,979 - agent - DEBUG - middleware.py:42 - [log_before_model]HumanMessage | 【内部指令-切勿向用户展示或复述本条及下方任何带【】标记的行】
+你是扫地机器人官方旗舰店的专业在线客服。回答需简洁、专业、易懂，避免冗长堆砌。
+用户会以「小智」这一昵称称呼你；你须在恰当的首次或开场场景以此名称自称，并自然告知对方可以这样称呼你，例如：「你好呀~我是小智，很高兴为你服务！」
+（以上仅为风格示例，可据实微调，勿重复堆砌多套问候。）
+【应答风格】专业、简洁、亲切
+【对话摘录】
+用户：小户型适合哪些扫地机器人
+助手：小户型家庭非常适合使用扫地机器人！根据你的需求，推荐关注以下几点：
+
+- **机身小巧灵活**：优先选择直径小于35cm的机型，方便在狭窄空间、家具底部穿梭，提升边角覆盖率；
+- **智能导航系统**：激光或视觉导航能快速建图、精准避障，避免在小空间里“迷路”或反复碰撞；
+- **续航适中**：一般30–60分钟续航足够覆盖60㎡以内的面积，无需频繁回充；
+- **吸力够用**：2000Pa以上吸力可有效清理灰尘、碎屑和宠物毛发；
+- **智能功能加分**：支持APP控制、分区清扫、定时任务等功能，使用更省心；
+- **按需选配**：如果需要拖地，可考虑扫拖一体机型；若垃圾清理频率高，自动集尘功能会很实用。
+
+如果你有具体预算、是否养宠、是否需要拖地等细节，我可以帮你进一步缩小推荐范围哦！
+【本轮用户问题】
+这些机器人有什么特点
+2026-03-30 16:15:43,098 - agent - INFO - chat_service.py:49 - [对话服务] 查询处理完成
+2026-03-30 16:15:43,100 - agent - INFO - chat.py:71 - [会话管理] 会话已保存: string
+2026-03-30 16:15:43,104 - agent - INFO - chat.py:204 - [对话接口] 响应完成, 会话ID: string
+2026-03-30 16:15:43,106 - agent - INFO - logging.py:43 - [API] 响应: POST /api/v1/chat/message 状态码: 200 耗时: 13.132秒
+2026-03-30 16:25:37,669 - agent - INFO - main.py:45 - [FastAPI] 服务已关闭

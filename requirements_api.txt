@@ -1,0 +1,25 @@
+# FastAPI集成依赖包清单
+# 安装命令: pip install -r requirements_api.txt
+
+# FastAPI核心框架
+fastapi>=0.104.0
+
+# ASGI服务器
+uvicorn[standard]>=0.24.0
+
+# 数据验证
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+
+# HTTP客户端
+httpx>=0.25.0
+
+# 测试框架
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+
+# 可选依赖（根据需要安装）
+# python-multipart>=0.0.6  # 支持文件上传
+# python-jose[cryptography]>=3.3.0  # JWT认证
+# passlib[bcrypt]>=1.7.4  # 密码加密
+# redis>=5.0.0  # Redis会话存储
