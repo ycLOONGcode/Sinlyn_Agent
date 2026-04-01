@@ -14,7 +14,7 @@ from api.routers import chat, agent, report, health
 
 app = FastAPI(
     title=settings.app_name,
-    description="基于RAG与Agent的扫地机器人智能客服API服务",
+    description="基于RAG与Agent的心聆AgentAPI服务",
     version=settings.app_version,
     docs_url="/docs",
     redoc_url="/redoc",

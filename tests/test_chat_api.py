@@ -38,7 +38,7 @@ def test_chat_message():
     response = client.post(
         "/api/v1/chat/message",
         json={
-            "message": "小户型适合哪些扫地机器人"
+            "message": "我最近有点焦虑"
         }
     )
     assert response.status_code == 200
@@ -54,10 +54,10 @@ def test_chat_message_with_session():
     response = client.post(
         "/api/v1/chat/message",
         json={
-            "message": "小户型适合哪些扫地机器人",
+            "message": "我最近有点焦虑",
             "session_id": "test_session_001",
-            "robot_nickname": "小洁",
-            "nature": "专业、简洁、亲切"
+            "robot_nickname": "小心聆",
+            "nature": "专业、耐心、亲切"
         }
     )
     assert response.status_code == 200

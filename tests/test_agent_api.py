@@ -44,7 +44,7 @@ def test_call_tool_rag_summarize():
         "/api/v1/agent/tools/rag_summarize",
         json={
             "params": {
-                "query": "小户型适合哪些扫地机器人"
+                "query": "我最近有点焦虑"
             }
         }
     )

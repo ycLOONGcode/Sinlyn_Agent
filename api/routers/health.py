@@ -38,5 +38,5 @@ async def get_version():
     return {
         "service": settings.app_name,
         "version": settings.app_version,
-        "description": "基于RAG与Agent的扫地机器人智能客服API服务"
+        "description": "基于RAG与Agent的心聆AgentAPI服务"
     }
