@@ -7,7 +7,7 @@ import json
 
 #设置页面配置项
 st.set_page_config(
-    page_title="AI智能伴侣-nigger",
+    page_title="AI智能伴侣",
     page_icon="👤",
     #控制整个网页的布局
     layout="wide",
