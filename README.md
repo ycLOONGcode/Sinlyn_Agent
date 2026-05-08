@@ -1,4 +1,3 @@
-```markdown
 # Sinlyn_Agent
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
